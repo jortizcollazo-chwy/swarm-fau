@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">
+        <h2>Data</h2>
+        <p>Here you can chose between viewing data through an intelligent lens or a raw lens.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col mx-auto">
+        <div class="card">
+            <img src="assets/raw.jpg" class="card-img-top" alt="raw">
+            <div class="card-body">
+                <h5 class="card-title">Raw</h5>
+                <p class="card-text">View your data exactly as captured in the database.</p>
+                <a class="btn btn-primary" [routerLink]="['/data/raw']">Go to Raw View</a>
+            </div>
+        </div>
+    </div>
+    <div class="col mx-auto">
+            <div class="card">
+                <img src="assets/intelligent.jpg" class="card-img-top" alt="intelligent">
+                <div class="card-body">
+                    <h5 class="card-title">Intelligent</h5>
+                    <p class="card-text">View your data through the lens of an interpreting model.</p>
+                    <a class="btn btn-primary" [routerLink]="['/data/intelligent']">Go to Intelligent View</a>
+                </div>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.nobull {
+    list-style-type: none;
+}
+
+.indent-one {
+    padding-left: 1em; /* Set the distance from the list edge to 1x the font size */
+    list-style-position: outside;
+}
+
+.indent-two {
+    padding-left: 2em;
+    list-style-position: outside;
+}
+
+.indent-three {
+    padding-left: 3em;
+    list-style-position: outside;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

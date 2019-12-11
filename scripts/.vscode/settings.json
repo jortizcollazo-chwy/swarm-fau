@@ -1,0 +1,60 @@
+{
+    // System
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-NoExit", "-Command", "$transcript = Start-Transcript;",
+        "Add-Content -Path ./ignoreme-shell-transcript.log -Value $transcript.Path"
+    ],
+    "terminal.integrated.rendererType": "dom",
+
+    // Editor (built-in)
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+        80, 100
+    ],
+    "editor.largeFileOptimizations": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    // "[scss]": {
+    //     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    // },
+    // "[csharp]": {
+    //     "editor.defaultFormatter": "ms-vscode.csharp"
+    // },
+
+    // vscode window
+    // "window.zoomLevel": -1,
+    "breadcrumbs.enabled": true,
+
+    // file explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // Git (built-in)
+    "git.enabled": true,
+
+    // Trailing Spaces (Extension)
+    "trailing-spaces.trimOnSave": true,
+
+    // Python (Extension)
+    "python.pythonPath": "${workspaceFolder}/venv/Scripts/python.exe",
+    "python.workspaceSymbols.ctagsPath": "C:/bin/ctags.exe",
+    // "python.linting.flake8Path": "${workspaceFolder}/venv/Scripts/flake8.exe",
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.pylintEnabled": true,
+    // "python.linting.pylintPath": "C:/env/Programs/Python/virtualenvs/python-intel/Scripts/pylint.exe",
+    "python.formatting.yapfPath": "${workspaceFolder}/venv/Scripts/yapf.exe",
+    "python.formatting.provider": "yapf",
+
+    // typescript (extension)
+    // "typescript.updateImportsOnFileMove.enabled": "always",
+
+}
